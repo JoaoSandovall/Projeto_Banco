@@ -1,0 +1,7 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Garante que o corpo ocupe a altura total da viewport */
+    margin: 0;
+}

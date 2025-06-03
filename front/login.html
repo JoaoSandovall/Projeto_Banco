@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Malvader - Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /* Define a fonte Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-purple-700 to-indigo-900 min-h-screen flex items-center justify-center p-4">
+    <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-sm text-center">
+        <h1 class="text-3xl font-bold text-gray-800 mb-6">Entrar</h1>
+        <form id="loginForm" class="space-y-4">
+            <div>
+                <input type="text" id="cpf" placeholder="CPF" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-700" required>
+            </div>
+            <div>
+                <input type="password" id="password" placeholder="Senha" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-700" required>
+            </div>
+            <div>
+                <input type="text" id="otp" placeholder="OTP (Código de 6 dígitos)" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-gray-700" required>
+            </div>
+            <button type="submit" class="w-full bg-purple-600 text-white p-3 rounded-lg font-semibold hover:bg-purple-700 transition duration-300 ease-in-out shadow-md">
+                Entrar
+            </button>
+        </form>
+        <button id="otherAccountBtn" class="mt-6 text-purple-600 font-medium hover:underline">
+            Entrar em outra conta
+        </button>
+        <p id="message" class="mt-4 text-sm text-red-500"></p>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        // Adiciona um listener para o formulário de login
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o envio padrão do formulário
+
+            const cpf = document.getElementById('cpf').value;
+            const password = document.getElementById('password').value;
+            const otp = document.getElementById('otp').value;
+            const messageElement = document.getElementById('message');
+
+            // Simula uma autenticação bem-sucedida
+            if (cpf === '12345678900' && password === 'senha123' && otp === '123456') {
+                messageElement.textContent = '';
+                // Redireciona para a página inicial (home.html)
+                window.location.href = 'home.html';
+            } else {
+                messageElement.textContent = 'CPF, senha ou OTP incorretos. Tente novamente.';
+            }
+        });
+
+        // Adiciona um listener para o botão "Entrar em outra conta" (apenas para demonstração, redireciona para a mesma página)
+        document.getElementById('otherAccountBtn').addEventListener('click', function() {
+            alert('Esta funcionalidade permitiria trocar de usuário ou criar uma nova conta.');
+            // Em uma aplicação real, isso poderia limpar os campos ou redirecionar para uma tela de cadastro.
+        });
+    </script>
+</body>
+</html>

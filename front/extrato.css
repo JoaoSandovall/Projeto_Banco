@@ -1,0 +1,8 @@
+body {
+    background-color: #f3f4f6; /* Cor de fundo cinza claro */
+}
+
+/* Ajusta o padding inferior para a barra de navegação fixa */
+body {
+    padding-bottom: 5rem; /* Altura da barra de navegação + algum espaço */
+}

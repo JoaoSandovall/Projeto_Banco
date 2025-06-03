@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco Malvader - Início</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="home.css">
+    <style>
+        /* Define a fonte Inter */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+    <div class="relative bg-purple-700 text-white p-6 rounded-b-3xl shadow-lg">
+        <div class="flex justify-between items-center mb-4">
+            <a href="#" class="text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>
+            </a>
+            <div class="flex space-x-4">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.04 5.455 1.31m5.714 0a24.246 24.246 0 0 0-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="text-center mb-6">
+            <p class="text-sm text-purple-200">Saldo disponível</p>
+            <h2 class="text-4xl font-bold">R$ 345.756,87</h2>
+            <a href="extrato.html" class="text-purple-200 text-sm font-medium hover:underline mt-2 inline-block">VER EXTRATO</a>
+        </div>
+
+        <div class="flex justify-around bg-white p-4 rounded-xl shadow-md -mb-10 relative z-10 mx-4">
+            <button class="flex flex-col items-center text-purple-700 text-sm font-medium" onclick="window.location.href='pix_transferencia.html'">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mb-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 0 1 5.814-5.519l2.74-1.22m0 0l-5.94-2.281m5.94 2.281l-2.28 5.941" />
+                </svg>
+                <span>PIX</span>
+            </button>
+            <button class="flex flex-col items-center text-purple-700 text-sm font-medium">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mb-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7.5 21L3 16.5m0 0L7.5 12M3 16.5h13.5m0-13.5L21 7.5m0 0L16.5 12M21 7.5H7.5" />
+                </svg>
+                <span>TRANSF.</span>
+            </button>
+            <button class="flex flex-col items-center text-purple-700 text-sm font-medium" onclick="window.location.href='extrato.html'">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mb-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h.008v.008H8.25m0-12.75h.008v.008H8.25M19.5 18v.75c0 .414-.336.75-.75.75H5.625a1.5 1.5 0 0 1-1.5-1.5v-9.75a1.5 1.5 0 0 1 1.5-1.5h3.879a1.5 1.5 0 0 1 1.06.44l2.14 2.141a1.5 1.5 0 0 0 1.06.44h3.879m-1.5-6H5.625a1.5 1.5 0 0 0-1.5 1.5v9.75a1.5 1.5 0 0 0 1.5 1.5h12.75a1.5 1.5 0 0 0 1.5-1.5v-.75" />
+                </svg>
+                <span>EXTRATO</span>
+            </button>
+            <button class="flex flex-col items-center text-purple-700 text-sm font-medium" onclick="window.location.href='cartao_credito.html'">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mb-1">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9.75h19.5m-16.5 5.25h6m-6 2.25h8.25M6.75 12H2.25l-1.5 1.5v2.25L2.25 18h19.5l1.5-1.5v-2.25L21.75 12H6.75Z" />
+                </svg>
+                <span>CRÉDITO</span>
+            </button>
+        </div>
+    </div>
+
+    <main class="flex-grow p-4 mt-8">
+        <div class="bg-white p-6 rounded-2xl shadow-md mb-6">
+            <h3 class="text-lg font-semibold text-gray-800 mb-4">PRINCIPAIS</h3>
+            <p class="text-gray-600">Aqui você verá um resumo das suas principais atividades e informações.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-md mb-6">
+            <div class="flex justify-between items-center mb-4">
+                <h3 class="text-lg font-semibold text-gray-800">INVESTIMENTOS</h3>
+                <button class="bg-purple-100 text-purple-700 px-4 py-2 rounded-lg font-medium hover:bg-purple-200 transition duration-300 ease-in-out">
+                    Resgatar
+                </button>
+            </div>
+            <p class="text-gray-600 text-sm">Total investido</p>
+            <h4 class="text-2xl font-bold text-gray-800 mb-2">R$ 23.123,49</h4>
+            <p class="text-gray-600 text-sm">Disponível para resgate</p>
+            <p class="text-xl font-bold text-gray-800 mb-4">R$ 12.324,99</p>
+
+            <h5 class="text-md font-semibold text-gray-700 mb-2">Seus rendimentos de 2022</h5>
+            <div class="flex justify-around items-end h-24">
+                <div class="flex flex-col items-center">
+                    <div class="bg-purple-300 rounded-t-md" style="height: 60%; width: 16px;"></div>
+                    <span class="text-xs text-gray-500 mt-1">JAN</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-purple-300 rounded-t-md" style="height: 40%; width: 16px;"></div>
+                    <span class="text-xs text-gray-500 mt-1">FEV</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-purple-300 rounded-t-md" style="height: 75%; width: 16px;"></div>
+                    <span class="text-xs text-gray-500 mt-1">MAR</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-purple-300 rounded-t-md" style="height: 50%; width: 16px;"></div>
+                    <span class="text-xs text-gray-500 mt-1">ABR</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-purple-300 rounded-t-md" style="height: 85%; width: 16px;"></div>
+                    <span class="text-xs text-gray-500 mt-1">MAI</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-purple-300 rounded-t-md" style="height: 70%; width: 16px;"></div>
+                    <span class="text-xs text-gray-500 mt-1">JUN</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-purple-300 rounded-t-md" style="height: 90%; width: 16px;"></div>
+                    <span class="text-xs text-gray-500 mt-1">JUL</span>
+                </div>
+                <div class="flex flex-col items-center">
+                    <div class="bg-purple-300 rounded-t-md" style="height: 65%; width: 16px;"></div>
+                    <span class="text-xs text-gray-500 mt-1">AGO</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-md">
+            <h3 class="text-lg font-semibold text-gray-800 mb-4">SERVIÇOS</h3>
+            <p class="text-gray-600">Explore outros serviços disponíveis para você.</p>
+        </div>
+    </main>
+
+    <nav class="bg-white p-4 flex justify-around items-center rounded-t-2xl shadow-lg fixed bottom-0 left-0 w-full z-20">
+        <a href="home.html" class="flex flex-col items-center text-purple-700 font-medium">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125h9.75a1.125 1.125 0 0 0 1.125-1.125V9.75M8.25 21h8.25" />
+            </svg>
+            <span class="text-xs">Início</span>
+        </a>
+        <a href="extrato.html" class="flex flex-col items-center text-gray-500 hover:text-purple-700 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m0 12.75h.008v.008H8.25m0-12.75h.008v.008H8.25M19.5 18v.75c0 .414-.336.75-.75.75H5.625a1.5 1.5 0 0 1-1.5-1.5v-9.75a1.5 1.5 0 0 1 1.5-1.5h3.879a1.5 1.5 0 0 1 1.06.44l2.14 2.141a1.5 1.5 0 0 0 1.06.44h3.879m-1.5-6H5.625a1.5 1.5 0 0 0-1.5 1.5v9.75a1.5 1.5 0 0 0 1.5 1.5h12.75a1.5 1.5 0 0 0 1.5-1.5v-.75" />
+            </svg>
+            <span class="text-xs">Extrato</span>
+        </a>
+        <a href="#" class="flex flex-col items-center text-gray-500 hover:text-purple-700 transition duration-300">
+            <div class="bg-purple-700 p-3 rounded-full shadow-lg -mt-8">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="white" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 0 1 5.814-5.519l2.74-1.22m0 0l-5.94-2.281m5.94 2.281l-2.28 5.941" />
+                </svg>
+            </div>
+            <span class="text-xs mt-1">Pix</span>
+        </a>
+        <a href="cartao_credito.html" class="flex flex-col items-center text-gray-500 hover:text-purple-700 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 8.25h19.5M2.25 9.75h19.5m-16.5 5.25h6m-6 2.25h8.25M6.75 12H2.25l-1.5 1.5v2.25L2.25 18h19.5l1.5-1.5v-2.25L21.75 12H6.75Z" />
+            </svg>
+            <span class="text-xs">Cartões</span>
+        </a>
+        <a href="#" class="flex flex-col items-center text-gray-500 hover:text-purple-700 transition duration-300">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+            </svg>
+            <span class="text-xs">Perfil</span>
+        </a>
+    </nav>
+
+    <script src="app.js"></script>
+</body>
+</html>
